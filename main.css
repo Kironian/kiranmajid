@@ -1,0 +1,171 @@
+a:link {
+	color: white;
+  }
+  
+  /* visited link */
+  a:visited {
+	color: black;
+  }
+  
+  /* mouse over link */
+  a:hover {
+	color: blue;
+  }
+  
+  /* selected link */
+  a:active {
+	color: blue;
+  }
+
+.profile-pic {
+	width: 300px;
+	height: 250px;
+	background-image: url("/Users/kiranmajid/kiranmajid/img/mainpageprofile.jpg");
+	background-size: contain; 
+ background-color: #cccccc;
+
+ padding: 0px;
+ margin: 10px;
+
+}
+
+/* height of the body of each page */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* tab links */
+  .tablink {
+    background-color: black;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 50%;
+  }
+  
+  .tablink:hover {
+    background-color: grey;
+  }
+  
+  /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: darkslategray;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+  
+  #Home {background-color: black;}
+  #Projects {background-color: black;}
+  #Contact {background-color: black;}
+  #About {background-color: black;}
+
+/* imported fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+
+
+/* css grid */
+	body {
+		font-family: 'Roboto', sans-serif;
+	}
+	
+	h1 {
+		font-size: 40px;
+		color: #ffffff;
+		padding: 10px;
+		margin: auto;
+		font-family: 'Roboto', sans-serif; 
+	}
+
+	h2 {
+		font-size: 20px;
+		color: white;
+		padding: 10px;
+		margin:auto;
+	}
+	p {
+		color: #ffffff;
+		padding : 10px
+		
+	}
+	
+	
+	
+	.grid-container {
+	height: 100%;
+	display: grid;
+	position: relative;
+	padding: 0, 0, 0, 0;
+	grid-template-rows: 0.50fr 0.25fr 0.25f;
+	grid-template-columns: 0.70fr 0.30fr;
+	grid-gap: 0.2rem;
+	background-color:black;
+	width: 100%;
+	}
+	
+	
+	.grid-item {
+	background-color: #000000;
+	border: 4px;
+	}
+	
+	.item-1{
+	background-size: 100%;
+	background-color:bisque;
+	background-repeat: no-repeat;
+	}
+	
+	.item-2{
+	/*this will be the first project */
+    background-color:tomato;
+    background-size: 100%;
+    background-repeat: no-repeat;
+	}
+	
+	.item-3{
+	/* this will be the second project */
+    background-color:black;
+    background-size: contain;
+    background-repeat: repeat;
+	background-image: url("/Users/kiranmajid/kiranmajid/img/Screen Shot 2022-04-27 at 2.45.21 AM.png");
+	}
+	
+	.item-4{
+	/* this will be the third project */
+    background-color:brown;
+    background-size:100%;
+    background-repeat: no-repeat;
+	}
+	
+	.item-5{
+ 	/* this will be the fourth project */
+    background-color:wheat;
+    background-size: fill;
+	background-repeat: no-repeat;
+	background-image: url("/Users/kiranmajid/kiranmajid/img/Screen Shot 2022-04-27 at 2.44.48 AM.png");
+	background-position: center;
+	}
+
+	.item-6{
+		background-color:cadetblue;
+		background-size: fill;
+	}
+
+	.item-7{
+		background-color: black;
+		background-size: 100%;
+		background-position: center;
+		background-image: url("/Users/kiranmajid/kiranmajid/img/Screen Shot 2022-04-27 at 2.44.32 AM.png")
+	}
+
+	.item-8{
+		background-color:cornflowerblue;
+		background-size: 100%;
+	}

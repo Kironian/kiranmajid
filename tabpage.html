@@ -1,0 +1,62 @@
+<html>
+    <head>
+      <link rel="stylesheet" type="text/css" href="maintab.css">
+    </head>
+    <body>
+<button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+<button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
+<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>Home is where the heart is..</p>
+  <div class="grid-container">
+    <div class="grid-item item-1"></div>
+    <div class="grid-item item-2">
+    <h1>Kiran Majid Portfolio - MIT xPRO 2022</h1>
+    <p> If you wanna see my design portfolio check out <a href="https://www.kiranmajid.co">kiranmajid.co</a></p></div>
+    <div class="grid-item item-3"> <h1>Img1 </h1></div>
+    <div class="grid-item item-4"> <h1> Project 1 </h1><p>Descriptor Text</p></div>
+    <div class="grid-item item-5"> <h1> Img2 </h1></div>
+    <div class="grid-item item-6"> <h1> Project 2 </h1> <p>Descriptor Text</p></div>
+    <div class="grid-item item-7"> <h1>Img3</h1> </div>
+    <div class="grid-item item-8"> <h1> Project 3 </h1> <p>Descriptor Text</p></div>
+    
+    </div>
+</div>
+
+<div id="News" class="tabcontent">
+  <h3>News</h3>
+  <p>Some news this fine day!</p>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
+<script>
+  function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+  }
+  
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  </script>
+</body>
+</html>
